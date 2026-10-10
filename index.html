@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap"
+		rel="stylesheet">
+
+	<title>Frontend Mentor | Hotel booking confirmation page</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 0.6875rem;
+			text-align: center;
+		}
+
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<!-- Sidebar starts -->
+
+	<aside class="sidebar">
+
+		<!-- brand/logo -->
+		<header class="sidebar-header">
+
+			<a href="/" class="brand">
+				<img src="assets/images/logo.svg" alt="Maison Soleil">
+			</a>
+
+			<!-- mobile nav menu btn -->
+			<a href="#mobile-nav" class="menu-btn" aria-label="Open navigation">
+				<img src="assets/images/icon-menu.svg" alt="">
+			</a>
+		</header>
+
+		<!-- Guest navigation -->
+
+		<nav id="mobile-nav" aria-label="Main navigation" class="nav-links">
+
+
+			<a href="#stay" class="nav-link badge-nav">
+				<img src="assets/images/icon-bed.svg" alt="bed-icon" class="nav-icon">
+				<span class="nav-label">Your stay</span>
+				<span class="nav-badge">1</span>
+			</a>
+
+			<a href="#house" class="nav-link">
+				<img src="assets/images/icon-house.svg" alt="house-icon" class="nav-icon">
+				<span class="nav-label">The house</span>
+			</a>
+
+			<a href="#around-town" class="nav-link">
+				<img src="assets/images/icon-pin.svg" alt="pin-icon" class="nav-icon">
+				<span class="nav-label">Around town</span>
+			</a>
+
+			<a href="#breakfast" class="nav-link">
+				<img src="assets/images/icon-breakfast-outline.svg" alt="breakfast-icon" class="nav-icon">
+				<span class="nav-label">Breakfast</span>
+			</a>
+
+			<a href="#messages" class="nav-link">
+				<img src="assets/images/icon-mail.svg" alt="mail-icon" class="nav-icon">
+				<span class="nav-label">Messages</span>
+			</a>
+
+			<a href="#" class="close-btn" aria-label="Close navigation">
+				<img src="assets/images/icon-close.svg" alt="">
+			</a>
+
+		</nav>
+		<!-- Local weather -->
+		<section class="weather-card">
+			<h2>TODAY IN CASSIS</h2>
+			<img src="assets/images/icon-weather.svg" alt="" class="weather-svg">
+			<p class="temperature">27°</p>
+			<p>Sunny · light breeze</p>
+		</section>
+
+
+		<footer class="footer-info">
+			<p>Est. 1987</p>
+			<address>
+				Maison Soleil · 12 Rue des Oliviers · Cassis
+			</address>
+			<p>© 2026 Maison Soleil</p>
+		</footer>
+	</aside>
+	<!-- Sidebar ends -->
+
+	<!-- Main content starts -->
+	<main>
+		<header class="page-header">
+			<p class="booking-status">Booking · Confirmed</p>
+			<h1>
+				Bienvenue, <span>Lucia.</span>
+			</h1>
+
+
+			<div class="page-actions">
+
+				<button type="button" class="btn">Print receipt</button>
+
+				<button type="button" class="btn">Add to calendar</button>
+
+			</div>
+		</header>
+
+		<!-- Booking stage starts -->
+		<div class="booking-stage">
+
+
+			<!-- Booking cards start -->
+			<div class="booking-cards">
+				<!-- Receipt card -->
+				<section class="receipt-card">
+
+					<div class="receipt-header">
+						<p class="receipt-label">Receipt</p>
+						<p class="receipt-num"> № MS-2026 <br>
+							0421-AH</p>
+					</div>
+
+					<h2 class="receipt-title">Your stay</h2>
+					<span class="dashed-line"></span>
+					<div class="date-group">
+						<div class="check-in-col">
+							<p class="date-label">Check in</p>
+							<p class="date">25 Apr</p>
+							<p class="date-meta">Saturday · 15:00</p>
+						</div>
+
+
+						<div class="check-out-col">
+							<p class="date-label">Check out</p>
+							<p class="date">29 Apr</p>
+							<p class="date-meta">Wednesday · 11:00</p>
+						</div>
+					</div>
+					<span class="dashed-line"></span>
+					<div class="charges">
+						<div class="charge-row">
+							<p>Room · La Garrigue × 4 nights</p>
+							<p>€ 620.00</p>
+						</div>
+						<div class="charge-row">
+							<p>Breakfast · 2 guests</p>
+							<p>€ 96.00</p>
+						</div>
+						<div class="charge-row">
+							<p>Tourist tax</p>
+							<p>€ 14.40</p>
+						</div>
+						<span class="solid-line"></span>
+						<div class="receipt-total">
+							<p>Total paid</p>
+							<p>€ 730.40</p>
+						</div>
+						<div class="payment-info">
+							<p>Paid · Wise · GBP</p>
+							<img src="assets/images/icon-barcode.svg" alt="">
+						</div>
+					</div>
+				</section>
+
+				<!-- Note from host card -->
+				<section class="welcome-card">
+					<span class="dashed-line"></span>
+					<p class="card-label">WELCOME CARD</p>
+					<img src="assets/images/icon-sun.svg" alt="" id="sun-svg">
+					<h2 class="welcome-heading">A note from your host, <span id="host-name">Margaux.</span></h2>
+					<p class="welcome-card-content">We're so glad you're coming. The shutters will be open, the lemonade
+						cold,and the cat - Poivre - pretending not to notice you.</p>
+					<p id="room">ROOM</p>
+					<h2 class="room-name">La Garrigue</h2>
+				</section>
+			</div>
+			<!-- Sun illustration behind the cards. -->
+			<img src="assets/images/illustration-sun.svg" alt="illustration-sun" class="illustration-sun">
+			<!-- Booking cards end -->
+			<!-- hover instructions for desktop viewport -->
+			<div class="inst-hover">
+				<img src="assets/images/icon-sparkle.svg" alt="icon-sparkle" class="sparkle">
+				<p class="hover-text">hover to fan</p>
+				<img src="assets/images/icon-sparkle.svg" alt="icon-sparkle" class="sparkle">
+
+			</div>
+		</div>
+		<!-- Guest info row starts -->
+		<div class="guest-info">
+			<article class="info-card">
+				<!-- Arrival -->
+				<div class="arrival-card">
+					<div class="info-card-header">
+						<div class="info-card-label"><img src="assets/images/icon-key.svg" alt="" id="key-icon">
+							<h2>Arrival</h2>
+						</div>
+						<p class="info-card-number">01</p>
+					</div>
+					<p class="card-title">Check-in from 15:00</p>
+					<p class="arrival-date">Sat, 25 April</p>
+					<p class="card-description">Ring the brass bell by the blue door. If we're at the market, the key is
+						in the terracotta pot by
+						the olive tree.</p>
+				</div>
+			</article>
+
+
+			<!-- Wifi -->
+			<article class="info-card">
+				<div class="wifi-card">
+					<div class="info-card-header">
+						<div class="info-card-label">
+							<img src="assets/images/icon-wifi.svg" alt="" id="wifi-icon">
+							<h2>Wifi</h2>
+						</div>
+						<p class="info-card-number">02</p>
+					</div>
+
+					<p class="card-title">Le Soleil · Guest</p>
+					<p>Password below</p>
+					<div class="network-label">
+						<p>Network</p>
+						<p>Le Soleil · Guest</p>
+					</div>
+					<div class="password-label">
+						<p>Password</p>
+						<p>soleil-2026</p>
+						<button type="button" class="copy-btn">Copy</button>
+					</div>
+				</div>
+			</article>
+			<!-- Breakfast -->
+			<article class="info-card">
+				<div class="breakfast-card">
+					<div class="info-card-header">
+						<div class="info-card-label">
+							<img src="assets/images/icon-breakfast.svg" alt="" id="breakfast-icon">
+							<h2>Breakfast</h2>
+						</div>
+						<p class="info-card-number">03</p>
+					</div>
+					<div class="breakfast-details">
+						<p class="card-title">Served 8 - 10:30</p>
+						<p>On the terrace</p>
+					</div>
+					<p class="card-description">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free
+						option? Leave a note the night before.</p>
+				</div>
+			</article>
+		</div>
+
+		<!-- Guest info row ends -->
+	</main>
+	<!-- Main content ends -->
+
+	<footer class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor.</a>
+		Coded by <a href="https://github.com/MrAdarshPathak-dev">Adarsh Pathak.</a>
+	</footer>
+</body>
+
+</html>
