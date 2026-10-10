@@ -22,7 +22,7 @@ The interface should:
 ### Links
 
 - **GitHub Repository:** [View Repository](https://github.com/MrAdarshPathak-dev/)frontend-mentor-hotel-booking-confirmation-page
-- **Live Site:** [View Live Site](SITE_URL)
+- **Live Site:** [View Live Site](https://mradarshpathak-dev.github.io/frontend-mentor-hotel-booking-confirmation-page/)
 
 ## My Process
 
